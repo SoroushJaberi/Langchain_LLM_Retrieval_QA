@@ -107,3 +107,65 @@ The `Dolly V2` model, specifically the `databricks/dolly-v2-3b` variant, is used
 6. **Response Presentation**: The generated answer is presented to the user, along with the sources of the information.
 
 This combined use of the `instructor-xl` model for embedding and the `Dolly V2` model for text generation ensures that the QA system can handle complex queries and provide accurate, contextually relevant answers.
+
+
+## Future Work
+
+### 1. Enhanced Document Processing
+
+- **Support for More Document Formats**: Extend the system to support additional document formats such as DOCX, HTML, and plain text files.
+- **Advanced Text Preprocessing**: Implement more sophisticated text preprocessing techniques to handle noise, extract more meaningful information, and improve the quality of embeddings.
+
+### 2. Improved Retrieval Mechanism
+
+- **Hybrid Retrieval**: Combine dense vector-based retrieval with traditional keyword-based retrieval to enhance the accuracy and relevance of the retrieved documents.
+- **Dynamic Chunking**: Implement dynamic text chunking techniques that adapt chunk sizes based on the content's structure, ensuring better context preservation.
+
+### 3. Advanced Models
+
+- **Transformer-based Models**: Experiment with more advanced transformer models for embedding and text generation, such as BERT, GPT-3, or T5, which might provide better performance and more accurate answers.
+- **Multilingual Support**: Incorporate multilingual models to support question-answering in multiple languages, expanding the system's applicability.
+
+### 4. Real-Time QA System
+
+- **Live Document Update**: Implement a mechanism to update the document database in real-time, ensuring that the system can handle dynamic and frequently changing information.
+- **Streaming Queries**: Develop the ability to handle streaming queries, providing answers in real-time as users input their questions.
+
+### 5. Enhanced User Interaction
+
+- **Interactive Interface**: Create an interactive user interface with visualization tools to help users explore the documents and understand the retrieval process.
+- **Voice Input and Output**: Integrate voice input and output capabilities to make the system more accessible and user-friendly.
+
+### 6. Better Evaluation Metrics
+
+- **Performance Metrics**: Implement more sophisticated evaluation metrics to measure the accuracy, relevance, and user satisfaction of the answers provided by the system.
+- **User Feedback Loop**: Develop a feedback loop where users can rate the answers, and use this feedback to continuously improve the system's performance.
+
+## Potential Better Models for Future Use
+
+### 1. GPT-4
+
+- **Capabilities**: GPT-4 offers superior language understanding and generation capabilities, making it an excellent choice for both embedding and text generation tasks.
+- **Performance**: With more parameters and advanced training techniques, GPT-4 can provide more accurate and contextually relevant answers.
+
+### 2. BERT (Bidirectional Encoder Representations from Transformers)
+
+- **Capabilities**: BERT excels at understanding the context within text due to its bidirectional nature, making it ideal for embedding tasks.
+- **Variants**: Consider using variants like RoBERTa or DistilBERT for specific tasks or for reducing computational requirements.
+
+### 3. T5 (Text-To-Text Transfer Transformer)
+
+- **Capabilities**: T5 is a versatile model that can handle a wide range of NLP tasks by converting them into a text-to-text format, making it highly adaptable for both embedding and generation.
+- **Efficiency**: T5's efficiency and performance can be leveraged for more complex and nuanced QA systems.
+
+### 4. Dense Passage Retrieval (DPR)
+
+- **Capabilities**: DPR provides an efficient way to retrieve passages from a large corpus using dense vectors, significantly improving retrieval performance.
+- **Integration**: Integrating DPR with advanced language models can enhance both the retrieval and answer generation stages.
+
+### 5. Multilingual Models
+
+- **Capabilities**: Models like mBERT or XLM-Roberta are designed to handle multiple languages, making them suitable for developing a multilingual QA system.
+- **Applicability**: These models can be used to expand the system's functionality to support a wider range of languages and cultural contexts.
+
+By implementing these future work suggestions and leveraging advanced models, you can significantly enhance the performance, usability, and applicability of your retrieval-based QA system.
